@@ -1,0 +1,73 @@
+//mixings
+.voicesearch_common {
+	background-size: 18px 18px;
+	z-index: 1;
+	position: absolute;
+	left: 218px;
+	top: 7px;
+	cursor: pointer;
+	width: 18px;
+	height: 18px;
+}
+.voicesearch_common_mobile{
+	background-size: 25px 25px;
+	z-index: 1;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	float: right;
+	margin-right: 5px;
+}	
+
+// Common
+// (for styles used in both mobile and desktop views)
+& when (@media-common = true) {
+	.block-search input {
+		padding-right: 50px !important;
+	}
+}
+ 
+// Mobile
+// (for all mobile styles.)
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+	.voicesearch_mic {
+		background: url('@{baseDir}MageChk_VoiceSearch/images/mic_gray_light.gif') no-repeat -1px 0px;
+		.voicesearch_common_mobile;
+	}
+	.voicesearch_mic_on {
+		background: url('@{baseDir}MageChk_VoiceSearch/images/mic_red_light.gif') no-repeat -1px 0px;
+		.voicesearch_common_mobile;
+	}
+	form.voicesearch-trigger{display:block;}
+	#voicesearch-trigger-tablet-desktop{display:none;}
+}
+ 
+// Tablet
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+	.voicesearch_mic {
+		background: url('@{baseDir}MageChk_VoiceSearch/images/mic_gray_light.gif') no-repeat -1px 0px;
+		.voicesearch_common;
+	}
+	.voicesearch_mic_on {
+		background: url('@{baseDir}MageChk_VoiceSearch/images/mic_red_light.gif') no-repeat -1px 0px;
+		.voicesearch_common;
+	}
+	form.voicesearch-trigger{display:none;}
+	#voicesearch-trigger-tablet-desktop{display:block;}
+}
+ 
+// Desktop
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+	.voicesearch_mic {
+		background: url('@{baseDir}MageChk_VoiceSearch/images/mic_gray_light.gif') no-repeat -1px 0px;
+		.voicesearch_common;
+	}
+	.voicesearch_mic_on {
+		background: url('@{baseDir}MageChk_VoiceSearch/images/mic_red_light.gif') no-repeat -1px 0px;
+		.voicesearch_common;
+	}
+	form.voicesearch-trigger{display:none;}
+	#voicesearch-trigger-tablet-desktop{display:block;}
+	
+}
