@@ -1,11 +1,11 @@
 <script type="text/javascript">// <![CDATA[
-	console.log("SearchByVoice: Loading Configuration...");
+	console.log("VoiceSearch: Loading Configuration...");
 
-	window.voicesearch_enabled 			= <?=$this->helper('MageSearch\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/enabled');?>;
-	window.voicesearch_search_id 		= "<?=$this->helper('MageSearch\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/search_id');?>";
-	window.voicesearch_device_scope 	= "<?=$this->helper('MageSearch\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/device_scope');?>";
-	window.voicesearch_voice_language 	= "<?=$this->helper('MageSearch\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/voice_language');?>";
-	window.voicesearch_images_path		= "<?=$this->getViewFileUrl('MageChk_VoiceSearch::images/')?>";
+	window.voicesearch_enabled 			= <?=$this->helper('CHK\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/enabled');?>;
+	window.voicesearch_search_id 		= "<?=$this->helper('CHK\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/search_id');?>";
+	window.voicesearch_device_scope 	= "<?=$this->helper('CHK\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/device_scope');?>";
+	window.voicesearch_voice_language 	= "<?=$this->helper('CHK\VoiceSearch\Helper\Data')->getConfigValue('voicesearch/general/voice_language');?>";
+	window.voicesearch_images_path		= "<?=$this->getViewFileUrl('CHK_VoiceSearch::images/')?>";
 
     require([
         'jquery',

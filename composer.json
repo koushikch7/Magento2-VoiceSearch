@@ -1,5 +1,5 @@
 {
-  "name": "magechk/voicesearch",
+  "name": "chk/voicesearch",
   "description": "Module for searching by voice",
   "type": "magento2-module",
   "version": "1.0.0",
@@ -18,7 +18,7 @@
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "mageChk\\VoiceSearch\\": ""
+      "CHK\\VoiceSearch\\": ""
     }
   }
 }

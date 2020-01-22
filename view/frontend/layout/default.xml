@@ -2,11 +2,11 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
 		<referenceBlock name="head.additional">
-			<block class="Magento\Framework\View\Element\Template" name="voicesearch.customjs" template="MageChk_VoiceSearch::voicesearch_config.phtml"/>
+			<block class="Magento\Framework\View\Element\Template" name="voicesearch.customjs" template="CHK_VoiceSearch::voicesearch_config.phtml"/>
         </referenceBlock>
         <referenceBlock name="top.search">
             <action method="setTemplate">
-                <argument name="template" xsi:type="string">MageChk_VoiceSearch::form.mini.phtml</argument>
+                <argument name="template" xsi:type="string">CHK_VoiceSearch::form.mini.phtml</argument>
             </action>
         </referenceBlock>
     </body>

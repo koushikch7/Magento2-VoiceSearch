@@ -1,21 +1,21 @@
 <?php
 /**
- * MageChk_VoiceSearch is a Module for searching by voice)
+ * CHK_VoiceSearch is a Module for searching by voice)
  *
  * @category    Catalog Search
- * @package     MageChk_VoiceSearch
+ * @package     CHK_VoiceSearch
  * @author      Koushik CH <contact@chkoushik.com>
  * @copyright   Koushik CH (https://chkoushik.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace MageChk\VoiceSearch\Helper;
+namespace CHK\VoiceSearch\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Store\Model\ScopeInterface;
 
 /**
  * Class Data
- * @package MageChk\VoiceSearch\Helper
+ * @package CHK\VoiceSearch\Helper
  */
 class Data extends AbstractHelper
 {
