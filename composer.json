@@ -3,6 +3,7 @@
   "description": "Module for searching by voice",
   "type": "magento2-module",
   "version": "1.0.0",
+  "minimum-stability": "dev",
   "authors": [
         {
             "name": "Koushik CH",
