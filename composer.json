@@ -3,24 +3,21 @@
   "description": "Module for searching by voice",
   "type": "magento2-module",
   "version": "1.0.0",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "authors": [
         {
             "name": "Koushik CH",
             "email": "contact@chkosuhik.com",
             "homepage": "https://chkoushik.com",
-			"role": "Software Developer"
+	    "role": "Software Developer"
         }
-  ],  
-  "license": [
-    "OSL-3.0",
-    "AFL-3.0"
   ],
+  "license": "GPL-3.0-or-later",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {},
   "autoload": {
-    "files": [ "registration.php" ],
-    "psr-4": {
-      "CHK\\VoiceSearch\\": ""
-    }
+     "psr-4": {
+        "CHK\\VoiceSearch\\": ""
+     }
   }
 }
